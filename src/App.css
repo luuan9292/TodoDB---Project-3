@@ -1,0 +1,27 @@
+
+.color__picker {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color__picker div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.active {
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+
+.result {
+    text-align: center;
+    border: 1px solid rgb(194, 188, 188);
+    margin: 50px;
+    padding: 10px;
+}
+
+
+

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TodoDB</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="container-fluid bg__db">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/anluu9292" target="blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://github.com/luuan9292" target="blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCeb6YeWePLuUWc2j82ZiMmQ" target="blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+
+        <div class="container">
+            <header class="header">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>TodoDB</h1>
+                    </div>
+                </div>
+            </header>
+
+		<!-- END HEADER -->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="toggleWrapper">
+                        <input type="checkbox" class="dn" id="dn" />
+                        <label for="dn" class="toggle">
+                            <span class="toggle__handler">
+                                <span class="crater crater--1"></span>
+                                <span class="crater crater--2"></span>
+                                <span class="crater crater--3"></span>
+                            </span>
+                            <span class="star star--1"></span>
+                            <span class="star star--2"></span>
+                            <span class="star star--3"></span>
+                            <span class="star star--4"></span>
+                            <span class="star star--5"></span>
+                            <span class="star star--6"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+			<!-- END SWITCH TOGGLE -->
+
+            <section class="form__input">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="What need to be done ?">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+			<!-- END FORM-INPUT -->
+
+            <section class="form__list">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <tr class="form__item">
+                                        <td>
+                                            <div class="round round__done">
+                                                <input id="1" name="option1" type="checkbox" id="checkbox" />
+                                                <label for="1"></label>
+                                                <span>ReactJS</span>
+                                                <div class="delete__important">
+                                                    	<div class='important__button'><i class="far fa-star"></i></div>
+                                                    	<div class='delete__button'><i class="fa fa-times-circle"></i></div>
+                                                    </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="form__item">
+                                        <td>
+                                            <div class="round round__done">
+                                                <input id="2" name="option1" type="checkbox" id="checkbox" />
+                                                <label for="2"></label>
+                                                <span>Angular 7</span>
+                                                <div class="delete__important">
+                                                    	<div class='important__button'><i class="far fa-star"></i></div>
+                                                    	<div class='delete__button'><i class="fa fa-times-circle"></i></div>
+                                                    </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="form__item">
+                                        <td>
+                                            <div class="round">
+                                                <input id="3" name="option1" type="checkbox" id="checkbox" />
+                                                <label for="3"></label>
+                                                <span>Vue</span>
+                                                <div class="delete__important">
+                                                    	<div class='important__button'><i class="far fa-star"></i></div>
+                                                    	<div class='delete__button'><i class="fa fa-times-circle"></i></div>
+                                                    </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="form__item">
+                                            <td>
+                                                <div class="round">
+                                                    <input id="4" name="option1" type="checkbox" id="checkbox" />
+                                                    <label for="4"></label>
+                                                    <span>NodeJS</span>
+                                                    <div class="delete__important">
+                                                    	<div class='important__button'><i class="far fa-star"></i></div>
+                                                    	<div class='delete__button'><i class="fa fa-times-circle"></i></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                </table>
+
+                            </div>
+
+
+                            <div class="card-footer">
+
+					            <div class="buttons">
+					                <a class="all" href="#"><i class="fas fa-list-ul"></i></a>
+					                <a class="active" href="#"><i class="far fa-circle"></i></a>
+					                <a class="complete" href="#"><i class="fas fa-check-double"></i></a>
+					            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+									<!-- Phan FormItem -->
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
