@@ -1,0 +1,492 @@
+/*-------------------------Background-----------------------------*/
+
+.bg__db {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 80%) ,url('./dragonball.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    
+}
+
+/*-------------------------Phan Header-----------------------------*/
+
+.header h1{
+    font-family: 'Black Ops One', cursive;
+    color: white;
+    font-size: 8rem;
+    text-align: right;
+    margin: 3% 0;
+    text-shadow: 4px 4px rgb(45, 203, 231);
+}
+
+/*-------------------------Phan Card-----------------------------*/
+.card-body {
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+.form__input {
+    margin: 5% 0 0 0;
+}
+
+.form__input .form-group {
+    padding: 0 12%;
+}
+
+
+.form__input .form-group input {
+    padding: 5% 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.form__input .form-group input::placeholder {
+    opacity: 0.4;
+}
+
+.form__list {
+    padding: 0 12%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.check__status {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+
+.form__item {
+  position: relative;
+}
+
+.delete__important {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.important__button {
+  cursor: pointer;
+}
+
+.active_star {
+  color: rgb(235, 235, 10);
+}
+
+.delete__button {
+      color: rgb(209, 19, 19);
+      cursor: pointer;
+      display: none;
+      margin-left: 20px;
+}
+
+
+.form__item:hover .delete__button{
+    display: block;
+}
+
+
+.round span {
+    margin-left: 8%;
+}
+
+.round__done span{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+
+
+
+/*-------------------------Social-----------------------------*/
+
+.social {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.social li {
+  position: relative;
+  list-style: none;
+  float: left;
+  margin: 10px;
+  width: 100px; 
+  height: 100px;
+  border-radius: 50%; 
+  line-height: 100px; 
+  text-align: center;
+  overflow: hidden;
+  font-size: 50px;
+  z-index: 1;
+  transform: rotate(45deg);
+}
+
+.social li:before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transition: .5s ease-in-out;
+  z-index: -2;
+}
+
+.social li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  transition: .5s ease-in-out;
+  z-index: -3;
+  opacity: .8;
+}
+
+.social li:hover:after {
+  top: 0;
+
+}
+
+.social li .fab {
+  color: #fff;
+  transform: rotate(-45deg);
+  text-shadow: 0 3px 0 rgba(0,0,0 .5);
+}
+
+.social li:nth-child(1):before,
+.social li:nth-child(1):after {
+  background-color: #3b5999;
+}
+
+.social li:nth-child(2):before,
+.social li:nth-child(2):after {
+  background-color: #02b875;
+}
+
+.social li:nth-child(3):before,
+.social li:nth-child(3):after {
+  background-color: #cd201f;
+}
+
+
+
+
+/*-------------------------CheckBox-----------------------------*/
+
+.round {
+  position: relative;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: -15%;
+  width: 45px;
+}
+
+.round label:after {
+  border: 8px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 17px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 35px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: rgb(24, 112, 212);
+  border-color: rgb(24, 112, 212);
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+body {
+  background-color: #f1f2f3;
+}
+
+
+
+.completed {
+  background-color: rgba(78, 206, 245, 0.5) !important;
+  transition: .8s ease-in-out;
+}
+
+.important {
+  background-color: rgba(226, 36, 36, 0.6) !important;
+  transition: .8s ease-in-out;
+}
+
+
+
+
+/*-------------------------Sort Button-----------------------------*/
+
+
+.buttons {
+  text-align: right;
+}
+
+
+.buttons a {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 30px;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  position: relative;
+  line-height: 64px;
+  font-size: 1.5rem;
+  color: rgba(35, 186, 224, 0.6);
+  background-color: #e2dede;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eaeaea));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #eaeaea);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #eaeaea); 
+  background-image: -ms-linear-gradient(top, #f6f6f6, #eaeaea); 
+  background-image: -o-linear-gradient(top, #f6f6f6, #eaeaea);
+  background-image: linear-gradient(top, #f6f6f6, #eaeaea);
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  border-radius: 32px;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .9);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .9);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .9);
+}
+
+.buttons a:active {
+  top: 1px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#f6f6f6));
+  background-image: -webkit-linear-gradient(top, #eaeaea, #f6f6f6);
+  background-image: -moz-linear-gradient(top, #eaeaea, #f6f6f6); 
+  background-image: -ms-linear-gradient(top, #eaeaea, #f6f6f6); 
+  background-image: -o-linear-gradient(top, #eaeaea, #f6f6f6);
+  background-image: linear-gradient(top, #eaeaea, #f6f6f6);
+}
+
+
+
+
+/*-------------------------SwitchToggle-----------------------------*/
+.toggleWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    padding: 0 200px;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .toggleWrapper input {
+    position: absolute;
+    left: -99em;
+  }
+  
+  .toggle {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 90px;
+    height: 50px;
+    background-color: #83D8FF;
+    border-radius: 84px;
+    transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  .toggle:before {
+    content: 'Add';
+    position: absolute;
+    left: -50px;
+    top: 15px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }
+  .toggle:after {
+    content: 'Filter';
+    position: absolute;
+    right: -48px;
+    top: 15px;
+    font-size: 18px;
+    color: rgb(45, 203, 231);
+  }
+  
+  .toggle__handler {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 3px;
+    left: 3px;
+    width: 44px;
+    height: 44px;
+    background-color: #FFCF96;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: rotate(-45deg);
+  }
+  .toggle__handler .crater {
+    position: absolute;
+    background-color: #E8CDA5;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    border-radius: 100%;
+  }
+  .toggle__handler .crater--1 {
+    top: 18px;
+    left: 10px;
+    width: 4px;
+    height: 4px;
+  }
+  .toggle__handler .crater--2 {
+    top: 28px;
+    left: 22px;
+    width: 6px;
+    height: 6px;
+  }
+  .toggle__handler .crater--3 {
+    top: 10px;
+    left: 25px;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .star {
+    position: absolute;
+    background-color: #ffffff;
+    transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border-radius: 50%;
+  }
+  
+  .star--1 {
+    top: 10px;
+    left: 35px;
+    z-index: 0;
+    width: 30px;
+    height: 3px;
+  }
+  
+  .star--2 {
+    top: 18px;
+    left: 28px;
+    z-index: 1;
+    width: 30px;
+    height: 3px;
+  }
+  
+  .star--3 {
+    top: 27px;
+    left: 40px;
+    z-index: 0;
+    width: 30px;
+    height: 3px;
+  }
+  
+  .star--4,
+  .star--5,
+  .star--6 {
+    opacity: 0;
+    transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  .star--4 {
+    top: 16px;
+    left: 11px;
+    z-index: 0;
+    width: 2px;
+    height: 2px;
+    transform: translate3d(3px, 0, 0);
+  }
+  
+  .star--5 {
+    top: 32px;
+    left: 17px;
+    z-index: 0;
+    width: 3px;
+    height: 3px;
+    transform: translate3d(3px, 0, 0);
+  }
+  
+  .star--6 {
+    top: 36px;
+    left: 28px;
+    z-index: 0;
+    width: 2px;
+    height: 2px;
+    transform: translate3d(3px, 0, 0);
+  }
+  
+  input:checked + .toggle {
+    background-color: #749DD6;
+  }
+  input:checked + .toggle:before {
+    color: rgb(45, 203, 231);
+  }
+  input:checked + .toggle:after {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  input:checked + .toggle .toggle__handler {
+    background-color: #FFE5B5;
+    transform: translate3d(40px, 0, 0) rotate(0);
+  }
+  input:checked + .toggle .toggle__handler .crater {
+    opacity: 1;
+  }
+  input:checked + .toggle .star--1 {
+    width: 2px;
+    height: 2px;
+  }
+  input:checked + .toggle .star--2 {
+    width: 4px;
+    height: 4px;
+    transform: translate3d(-5px, 0, 0);
+  }
+  input:checked + .toggle .star--3 {
+    width: 2px;
+    height: 2px;
+    transform: translate3d(-7px, 0, 0);
+  }
+  input:checked + .toggle .star--4,
+  input:checked + .toggle .star--5,
+  input:checked + .toggle .star--6 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  input:checked + .toggle .star--4 {
+    transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  input:checked + .toggle .star--5 {
+    transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  input:checked + .toggle .star--6 {
+    transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
